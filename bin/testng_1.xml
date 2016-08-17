@@ -1,0 +1,91 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Consumer_Sanity_Suite">
+ <listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/> 
+      <listener class-name="Utility.TestListener" />
+ 	  <listener class-name="Utility.RetryListener" />
+ </listeners> 
+
+ <test name="CartScenarios">
+	 <classes>
+	 	<class name="Functional_Scenarios.CartScenarios" />
+	 </classes>
+ </test>
+ 
+ <!-- <test name="ProductDetailsScenarios">
+	 <classes>
+	 	<class name="Functional_Scenarios.ProductDetailsScenarios" />
+	 </classes>
+ </test>
+ 
+ <test name="DownloadFromPlayStore">
+	 <classes>
+	 	<class name="Functional_Scenarios.DownloadFromPlayStore" />
+	 </classes>
+ </test>
+ 
+  <test name="WarrantyScanerios">
+	 <classes>
+	 	<class name="Functional_Scenarios.WarrantyScanerios" />
+	 </classes>
+ </test>
+ 
+ <test name="LocationScenarios">
+	 <classes>
+	 	<class name="Functional_Scenarios.LocationScenarios" />
+	 </classes>
+ </test>
+ 
+ <test name="NavigationDrawerScenarios">
+	 <classes>
+	 	<class name="Functional_Scenarios.NavigationDrawerScenarios" />
+	 </classes>
+ </test>
+ 
+ <test name="OLAMoneyScenarios">
+	 <classes>
+	 	<class name="Functional_Scenarios.OLAMoneyScenarios" />
+	 </classes>
+ </test>
+ 
+ <test name="PlacingOrderScenarios">
+	 <classes>
+	 	<class name="Functional_Scenarios.PlacingOrderScenarios" />
+	 </classes>
+ </test>
+ 
+  
+ <test name="QuickTourScenarios">
+	 <classes>
+	 	<class name="Functional_Scenarios.QuickTourScenarios" />
+	 </classes>
+ </test>
+ 
+  
+ <test name="SearchScenarios">
+	 <classes>
+	 	<class name="Functional_Scenarios.SearchScenarios" />
+	 </classes>
+ </test>
+
+ 
+ <test name="HomeScenarios">
+	 <classes>
+	 	<class name="Functional_Scenarios.HomeScenarios" />
+	 </classes>
+ </test>
+ 
+ <test name="OverflowMenuScenarios">
+	 <classes>
+	 	<class name="Functional_Scenarios.OverflowMenuScenarios" />
+	 </classes>
+ </test>
+ 
+ <test name="MyAccountScenarios">
+	 <classes>
+	 	<class name="Functional_Scenarios.MyAccountScenario" />
+	 </classes>
+ </test>
+   -->
+ </suite>

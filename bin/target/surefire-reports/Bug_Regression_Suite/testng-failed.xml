@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Bug_Regression_Suite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="Utility.TestListener"/>
+    <listener class-name="Utility.RetryListener"/>
+  </listeners>
+  <test name="Forgot Password Screen">
+    <classes>
+      <class name="BugRegressionSuite.ForgotPasswordScreen_SNo_26"/>
+    </classes>
+  </test> <!-- Forgot Password Screen -->
+  <test name="User Name Tapping">
+    <classes>
+      <class name="BugRegressionSuite.UserNameTapping_SNo_32"/>
+    </classes>
+  </test> <!-- User Name Tapping -->
+  <test name="Forgot Password Login">
+    <classes>
+      <class name="BugRegressionSuite.ForgotPassword_Sno_36"/>
+    </classes>
+  </test> <!-- Forgot Password Login -->
+  <test name="Product Connection issue">
+    <classes>
+      <class name="BugRegressionSuite.ProductConnectionIssue"/>
+    </classes>
+  </test> <!-- Product Connection issue -->
+  <test name="Checkout Error">
+    <classes>
+      <class name="BugRegressionSuite.CheckoutErrorOnCart"/>
+    </classes>
+  </test> <!-- Checkout Error -->
+  <test name="Product Connection issue(failed)">
+    <classes>
+      <class name="BugRegressionSuite.CheckoutErrorOnCart">
+        <methods>
+          <include name="afterExecution"/>
+          <include name="tearDown"/>
+          <include name="initializeDrivers"/>
+          <include name="quitTest"/>
+        </methods>
+      </class> <!-- BugRegressionSuite.CheckoutErrorOnCart -->
+      <class name="BugRegressionSuite.ForgotPassword_Sno_36">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initializeDrivers"/>
+          <include name="quitTest"/>
+        </methods>
+      </class> <!-- BugRegressionSuite.ForgotPassword_Sno_36 -->
+      <class name="BugRegressionSuite.ProductConnectionIssue">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initializeDrivers"/>
+          <include name="quitTest"/>
+          <include name="executeTestCase"/>
+        </methods>
+      </class> <!-- BugRegressionSuite.ProductConnectionIssue -->
+      <class name="BugRegressionSuite.ForgotPasswordScreen_SNo_26">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initializeDrivers"/>
+          <include name="quitTest"/>
+        </methods>
+      </class> <!-- BugRegressionSuite.ForgotPasswordScreen_SNo_26 -->
+      <class name="BugRegressionSuite.UserNameTapping_SNo_32">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initializeDrivers"/>
+          <include name="quitTest"/>
+        </methods>
+      </class> <!-- BugRegressionSuite.UserNameTapping_SNo_32 -->
+    </classes>
+  </test> <!-- Product Connection issue(failed) -->
+</suite> <!-- Failed suite [Bug_Regression_Suite] -->

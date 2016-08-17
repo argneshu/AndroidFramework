@@ -1,0 +1,168 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Bug_Regression_Suite">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="Utility.TestListener" />
+		<listener class-name="Utility.RetryListener" />
+	</listeners>
+
+	<test name="Forgot Password Screen">
+		<classes>
+			<class name="BugRegressionSuite.ForgotPasswordScreen_SNo_26" />
+		</classes>
+	</test>
+
+	<test name="User Name Tapping">
+		<classes>
+			<class name="BugRegressionSuite.UserNameTapping_SNo_32" />
+		</classes>
+	</test>
+	<test name="Forgot Password Login">
+		<classes>
+			<class name="BugRegressionSuite.ForgotPassword_Sno_36" />
+		</classes>
+	</test>
+	<test name="Product Connection issue">
+		<classes>
+			<class name="BugRegressionSuite.ProductConnectionIssue" />
+		</classes>
+	</test>
+	<test name="Checkout Error">
+		<classes>
+			<class name="BugRegressionSuite.CheckoutErrorOnCart" />
+		</classes>
+	</test>
+	<test name="OverFlow menu options">
+		<classes>
+			<class name="BugRegressionSuite.OverflowOptionIsMissing" />
+		</classes>
+	</test>
+	<test name="Space Issue">
+		<classes>
+			<class name="BugRegressionSuite.SpaceIssueInSignUp" />
+		</classes>
+	</test>
+	<test name="Unique coupon issue multiple times">
+		<classes>
+			<class name="BugRegressionSuite.UniqueCouponMultipleTime_SNo_39" />
+		</classes>
+	</test>
+	<test name="Cart connection Error">
+		<classes>
+			<class name="BugRegressionSuite.CartConnectionError_SNo_25" />
+		</classes>
+	</test>
+	<test name="Base Class">
+		<classes>
+			<class name="BugRegressionSuite.BaseTestBugRegression" />
+		</classes>
+	</test>
+	<test name="Tablets Category">
+		<classes>
+			<class name="BugRegressionSuite.CallingTablet_AN197" />
+		</classes>
+	</test> 
+	
+	<test name="Already Account Login">
+		<classes>
+			<class name="BugRegressionSuite.AlreadyHaveAnAccount_Login_SNo_38" />
+		</classes>
+	</test>
+	<test name="App Crash Issue">
+		<classes>
+			<class name="BugRegressionSuite.ApplicationCrashIssue" />
+		</classes>
+	</test>
+	<test name="Shopping Card Product Delete">
+		<classes>
+			<class name="BugRegressionSuite.ShoppingCartProductDelete" />
+		</classes>
+	</test>
+	<test name="Share App">
+		<classes>
+			<class name="BugRegressionSuite.ShareAppIssue" />
+		</classes>
+	</test>
+	<test name="Email Id Label in forgot screen">
+		<classes>
+			<class name="BugRegressionSuite.EmailId_LableOnForgotPassword_SNo_27" />
+		</classes>
+	</test>
+	<test name="Place Order Issue">
+		<classes>
+			<class name="BugRegressionSuite.PlacedOrderIssue" />
+		</classes>
+	</test>
+	<test name="Submit Review">
+		<classes>
+			<class name="BugRegressionSuite.SubmitReview" />
+		</classes>
+	</test>
+	<test name="Account name in drawer">
+		<classes>
+			<class name="BugRegressionSuite.AN_186" />
+		</classes>
+	</test>
+	<test name="Search 
+		Issue">
+		<classes>
+			<class name="BugRegressionSuite.AN_184" />
+		</classes>
+	</test>
+	<test name="GPS disabled Prompt">
+		<classes>
+			<class name="BugRegressionSuite.AN_180" />
+		</classes>
+	</test>
+	<test name="Login Error Message">
+		<classes>
+			<class name="BugRegressionSuite.LoginErrorMessage_AN190" />
+		</classes>
+	</test>
+	<test name="Forgot Password Mail Body Missing">
+		<classes>
+			<class name="BugRegressionSuite.MailBodyMissing_ForgotPassword_SNo_28" />
+		</classes>
+	</test>
+	<test name="Sign In with google">
+		<classes>
+			<class name="BugRegressionSuite.SignInWithGoogle_SNo_30" />
+		</classes>
+	</test>
+	<test name="Location on Nav drawer">
+		<classes>
+			<class name="BugRegressionSuite.LocationShownOnDrawerScreen_Sno_35" />
+		</classes>
+	</test>
+	<test name="Sorting Issue">
+		<classes>
+			<class name="BugRegressionSuite.SortingIssue" />
+		</classes>
+	</test>
+	<test name="Address Page Validation">
+		<classes>
+			<class name="BugRegressionSuite.AddressPageValidationIssue" />
+		</classes>
+	</test>
+	<test name="Anroid Phone Search">
+		<classes>
+			<class name="BugRegressionSuite.AndroidPhoneSearch_AN203" />
+		</classes>
+	</test>
+	<test name="Coupon Prompt Issue">
+		<classes>
+			<class name="BugRegressionSuite.CouponPromptIssue" />
+		</classes>
+	</test>
+	<test name="Review With Special Characters">
+		<classes>
+			<class name="BugRegressionSuite.ReviewWithSpecialCharacters" />
+		</classes>
+	</test>
+	<test name="Similar Product Issue">
+		<classes>
+			<class name="BugRegressionSuite.SimilarProductsIssue" />
+		</classes>
+	</test> 
+</suite> 

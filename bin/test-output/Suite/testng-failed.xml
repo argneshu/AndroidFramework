@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Forgot Password Screen(failed)">
+    <classes>
+      <class name="BugRegressionSuite.ForgotPasswordScreen_SNo_26">
+        <methods>
+          <include name="initializeDrivers"/>
+          <include name="executeTestCase"/>
+        </methods>
+      </class> <!-- BugRegressionSuite.ForgotPasswordScreen_SNo_26 -->
+    </classes>
+  </test> <!-- Forgot Password Screen(failed) -->
+</suite> <!-- Failed suite [Suite] -->

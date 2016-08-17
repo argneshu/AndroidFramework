@@ -1,0 +1,130 @@
+<html>
+<head>
+<style>
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+thead{
+ background: #395870;
+  color: #fff;
+}
+th, td {
+	padding: 10px 15px;
+}
+
+thead {
+	background: #395870;
+	color: #fff;
+}
+
+tbody tr:nth-child(even) {
+	background: #f0f0f2;
+}
+
+
+</style>
+</head>
+<body>
+
+	<table><thead>
+		<tr><th colspan=4><h1>Consumer App Suite Execution Summary</h1></th></tr></thead>
+			<tr>
+				<td>
+
+					<table>
+						<tr>
+							<th><b>Execution Date</b></th>
+							<td><b>:</b></td>
+							<td>Ex_Date</td>
+						</tr>
+					</table>
+
+				</td>
+				<td>
+
+					<table>
+						<tr>
+							<th><b>Start Time</b></th>
+							<td><b>:</b></td>
+							<td>S_Time</td>
+						</tr>
+					</table>
+
+				</td>
+				<td>
+
+					<table>
+						<tr>
+							<th><b>End Time</b></th>
+							<td><b>:</b></td>
+							<td>E_Time</td>
+						</tr>
+					</table>
+
+				</td>
+				<td>
+
+					<table>
+						<tr>
+							<th><b>Total Time Consumed</b></th>
+							<td><b>:</b></td>
+							<td>Time_Consumed</td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+
+			<tr></tr>
+			<tr></tr>
+			<tr>
+				<td>
+
+					<table>
+						<tr>
+							<th><b>Total Cases</b></th>
+							<td><b>:</b></td>
+							<td>T_Scenarios</td>
+						</tr>
+
+					
+					</table>
+				<td>
+
+					<table>
+						<tr>
+							<th><b>Passed Cases</b></th>
+							<td><b>:</b></td>
+							<td>P_Scenarios</td>
+						</tr>
+					</table>
+
+				</td>
+				<td>
+
+					<table>
+						<tr>
+							<th><b>Failed Cases</b></th>
+							<td><b>:</b></td>
+							<td>F_Scenerios</td>
+						</tr>
+					</table>
+
+				</td>
+				<td>
+
+					<table>
+						<tr>
+							<th><b>Re-Executed Cases</b></th>
+							<td><b>:</b></td>
+							<td>R_Scenerios</td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+		
+	</table>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Consumer_Sanity_Suite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="Utility.TestListener"/>
+    <listener class-name="Utility.RetryListener"/>
+  </listeners>
+  <test name="CartScenarios(failed)">
+    <classes>
+      <class name="Functional_Scenarios.CartScenarios">
+        <methods>
+          <include name="executeTestCase"/>
+          <include name="initializeDrivers"/>
+          <include name="quitTest"/>
+        </methods>
+      </class> <!-- Functional_Scenarios.CartScenarios -->
+    </classes>
+  </test> <!-- CartScenarios(failed) -->
+</suite> <!-- Failed suite [Consumer_Sanity_Suite] -->

@@ -1,0 +1,120 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 10, Errors: 0, Skipped: 0, Time elapsed: 1,226.788 sec <<< FAILURE! - in TestSuite
+executeTestCase(BugRegressionSuite.ProductConnectionIssue)  Time elapsed: 56.652 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.65 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'LP-116', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=E:\Projects\QA_Sanity\ConsumerApp\app\app-staging-debug-13100.apk, networkConnectionEnabled=true, warnings={}, app-package=com.zopperapp.staging, app-activity=com.zopper.aegon.ui.activity.OnBoardingActivity, databaseEnabled=false, deviceName=4e8e9235, platform=LINUX, desired={app=E:\Projects\QA_Sanity\ConsumerApp\app\app-staging-debug-13100.apk, platformVersion=4.4, app-package=com.zopperapp.staging, app-activity=com.zopper.aegon.ui.activity.OnBoardingActivity, platformName=Android, deviceName=32048e16028fa1a5}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: d6977d5f-8a4c-4074-a7ec-13e675faab6e
+*** Element info: {Using=name, value=Micromax 32T7250 32 Inch HD Ready LED TV}
+	at BugRegressionSuite.ProductConnectionIssue.executeTestCase(ProductConnectionIssue.java:24)
+
+executeTestCase(Functional_Scenarios.CartScenarios)  Time elapsed: 62.159 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.44 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'LP-116', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=E:\Projects\QA_Sanity\ConsumerApp\app\Zopper.apk, networkConnectionEnabled=true, warnings={}, app-package=com.zopperapp, app-activity=com.zopper.aegon.ui.activity.SplashActivity, databaseEnabled=false, deviceName=4e8e9235, platform=LINUX, desired={app=E:\Projects\QA_Sanity\ConsumerApp\app\Zopper.apk, platformVersion=4.4, app-package=com.zopperapp, app-activity=com.zopper.aegon.ui.activity.SplashActivity, platformName=Android, deviceName=32048e16028fa1a5}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 749ed68a-882e-46d3-9720-c6e19d2100ec
+*** Element info: {Using=name, value=Buy Now}
+	at Functional_Scenarios.CartScenarios.executeTestCase(CartScenarios.java:36)
+
+exchangeFunctionality(Functional_Scenarios.ProductDetailsScenarios)  Time elapsed: 31.594 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.91 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'LP-116', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=E:\Projects\QA_Sanity\ConsumerApp\app\Zopper.apk, networkConnectionEnabled=true, warnings={}, app-package=com.zopperapp, app-activity=com.zopper.aegon.ui.activity.SplashActivity, databaseEnabled=false, deviceName=4e8e9235, platform=LINUX, desired={app=E:\Projects\QA_Sanity\ConsumerApp\app\Zopper.apk, platformVersion=4.4, app-package=com.zopperapp, app-activity=com.zopper.aegon.ui.activity.SplashActivity, platformName=Android, deviceName=32048e16028fa1a5}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: f0ba3ee0-ee25-4de7-9ed3-383eca92b351
+*** Element info: {Using=id, value=com.zopperapp.staging:id/tv_drawer_signup_title}
+	at Functional_Scenarios.ProductDetailsScenarios.exchangeFunctionality(ProductDetailsScenarios.java:553)
+
+executeTestCase(Functional_Scenarios.ProductDetailsScenarios)  Time elapsed: 50.478 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.20 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'LP-116', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=E:\Projects\QA_Sanity\ConsumerApp\app\Zopper.apk, networkConnectionEnabled=true, warnings={}, app-package=com.zopperapp, app-activity=com.zopper.aegon.ui.activity.SplashActivity, databaseEnabled=false, deviceName=4e8e9235, platform=LINUX, desired={app=E:\Projects\QA_Sanity\ConsumerApp\app\Zopper.apk, platformVersion=4.4, app-package=com.zopperapp, app-activity=com.zopper.aegon.ui.activity.SplashActivity, platformName=Android, deviceName=32048e16028fa1a5}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: c8197fb1-e228-41d4-9b00-cf054c4f46b8
+*** Element info: {Using=id, value=com.zopperapp:id/tv_product_title}
+	at Functional_Scenarios.ProductDetailsScenarios.executeTestCase(ProductDetailsScenarios.java:69)
+
+favouritesProducts(Functional_Scenarios.ProductDetailsScenarios)  Time elapsed: 53.391 sec  <<< FAILURE!
+java.lang.Exception: 
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'LP-116', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=E:\Projects\QA_Sanity\ConsumerApp\app\Zopper.apk, networkConnectionEnabled=true, warnings={}, app-package=com.zopperapp, app-activity=com.zopper.aegon.ui.activity.SplashActivity, databaseEnabled=false, deviceName=4e8e9235, platform=LINUX, desired={app=E:\Projects\QA_Sanity\ConsumerApp\app\Zopper.apk, platformVersion=4.4, app-package=com.zopperapp, app-activity=com.zopper.aegon.ui.activity.SplashActivity, platformName=Android, deviceName=32048e16028fa1a5}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 933216d6-c1be-4d19-8cd7-93b748cd67e1
+*** Element info: {Using=id, value=com.zopperapp.staging:id/iv_popular_cat1}
+	at Functional_Scenarios.ProductDetailsScenarios.favouritesProducts(ProductDetailsScenarios.java:541)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'LP-116', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=E:\Projects\QA_Sanity\ConsumerApp\app\Zopper.apk, networkConnectionEnabled=true, warnings={}, app-package=com.zopperapp, app-activity=com.zopper.aegon.ui.activity.SplashActivity, databaseEnabled=false, deviceName=4e8e9235, platform=LINUX, desired={app=E:\Projects\QA_Sanity\ConsumerApp\app\Zopper.apk, platformVersion=4.4, app-package=com.zopperapp, app-activity=com.zopper.aegon.ui.activity.SplashActivity, platformName=Android, deviceName=32048e16028fa1a5}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 933216d6-c1be-4d19-8cd7-93b748cd67e1
+*** Element info: {Using=id, value=com.zopperapp.staging:id/iv_popular_cat1}
+	at Functional_Scenarios.ProductDetailsScenarios.favouritesProducts(ProductDetailsScenarios.java:462)
+
+loginCheckForSubmitReview(Functional_Scenarios.ProductDetailsScenarios)  Time elapsed: 71.089 sec  <<< FAILURE!
+java.lang.Exception: java.lang.AssertionError: expected [true] but found [false]
+	at Functional_Scenarios.ProductDetailsScenarios.loginCheckForSubmitReview(ProductDetailsScenarios.java:274)
+Caused by: java.lang.AssertionError: expected [true] but found [false]
+	at Functional_Scenarios.ProductDetailsScenarios.loginCheckForSubmitReview(ProductDetailsScenarios.java:266)
+
+moreCategoryProductListing(Functional_Scenarios.ProductDetailsScenarios)  Time elapsed: 41.836 sec  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at Functional_Scenarios.ProductDetailsScenarios.moreCategoryProductListing(ProductDetailsScenarios.java:443)
+
+productWithFilter(Functional_Scenarios.ProductDetailsScenarios)  Time elapsed: 42.17 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.97 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'LP-116', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=E:\Projects\QA_Sanity\ConsumerApp\app\Zopper.apk, networkConnectionEnabled=true, warnings={}, app-package=com.zopperapp, app-activity=com.zopper.aegon.ui.activity.SplashActivity, databaseEnabled=false, deviceName=4e8e9235, platform=LINUX, desired={app=E:\Projects\QA_Sanity\ConsumerApp\app\Zopper.apk, platformVersion=4.4, app-package=com.zopperapp, app-activity=com.zopper.aegon.ui.activity.SplashActivity, platformName=Android, deviceName=32048e16028fa1a5}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 6af0e1a3-f4a9-473f-9776-5296dc124567
+*** Element info: {Using=name, value=Samsung}
+	at Functional_Scenarios.ProductDetailsScenarios.productWithFilter(ProductDetailsScenarios.java:331)
+
+scrollableProductList(Functional_Scenarios.ProductDetailsScenarios)  Time elapsed: 127.912 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at Functional_Scenarios.ProductDetailsScenarios.scrollableProductList(ProductDetailsScenarios.java:306)
+
+sorting(Functional_Scenarios.ProductDetailsScenarios)  Time elapsed: 51.474 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.76 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'LP-116', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=E:\Projects\QA_Sanity\ConsumerApp\app\Zopper.apk, networkConnectionEnabled=true, warnings={}, app-package=com.zopperapp, app-activity=com.zopper.aegon.ui.activity.SplashActivity, databaseEnabled=false, deviceName=4e8e9235, platform=LINUX, desired={app=E:\Projects\QA_Sanity\ConsumerApp\app\Zopper.apk, platformVersion=4.4, app-package=com.zopperapp, app-activity=com.zopper.aegon.ui.activity.SplashActivity, platformName=Android, deviceName=32048e16028fa1a5}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: fca97615-4952-4a48-b1e2-bcbe2865cd36
+*** Element info: {Using=id, value=com.zopperapp.staging:id/iv_popular_cat1}
+	at Functional_Scenarios.ProductDetailsScenarios.sorting(ProductDetailsScenarios.java:391)
+

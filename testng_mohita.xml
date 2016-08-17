@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Consumer_Sanity_Suite">
+	<parameter name="buildType" value="sanitySuiteProduction" />
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="Utility.TestListener" />
+		<listener class-name="Utility.RetryListener" />
+	</listeners>
+	
+	 <test name="CartScenarios">
+		<classes>
+			<class name="Functional_Scenarios.CartScenarios" />
+		</classes>
+	</test>
+
+</suite>

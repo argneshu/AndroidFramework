@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Project" basedir=".">
+
+	<property name="RELEASE_ROOT" value="." />
+	<property name="SRC" value="${RELEASE_ROOT}/src" /> <!-- Change it to your source folder -->
+	<property name="LIB" value="${RELEASE_ROOT}/lib" /> <!-- Change it to your lib folder --> 
+	<property name="BIN" value="${RELEASE_ROOT}/bin" /> <!-- Change it to your binary folder where you need to gerate the compiled binary file -->
+	<property name="REPORT" value="${RELEASE_ROOT}/test-output" /> <!-- Change it to your output report folder -->
+	
+	<target name="setclasspath">
+		<path id="classpath_jars">
+			<fileset dir="${LIB}" includes="*.jar"/> 
+		</path>
+		<pathconvert pathsep=":" property="test.classpath" refid="classpath_jars"/>
+	</target>
+
+	<target name="init" depends="setclasspath">
+		<echo message="Initializing the bin directory."/>
+		<delete dir="${BIN}" />
+		<mkdir dir="${BIN}" />
+		<taskdef resource="testngtasks" classpath="${test.classpath}"/>
+	</target>
+	
+	<target name="compile" depends="init">
+		<echo message="compiling the code."/>
+		<javac srcdir="${SRC}"  destdir="${BIN}" classPath="${test.classpath}" includeantruntime="false"/>	
+	</target>
+	
+	<target name="run" depends="compile">	
+		<delete dir="${REPORT}" />
+		<mkdir dir="${REPORT}" />
+		<testng classpath ="${test.classpath}:${BIN}">
+			<xmlfileset dir="${RELEASE_ROOT}" includes="testng.xml"/>
+		</testng>
+	</target>
+	
+	<target name="clean" >
+		<echo message="cleaning the bin"/>
+		<delete dir="${BIN}"/>
+    </target>
+	
+ </project>

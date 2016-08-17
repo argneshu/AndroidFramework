@@ -1,0 +1,7 @@
+/target/
+*.log
+*.html
+*.png
+/test-output/*
+ExtentResult.zip
+/ExtentResult/*.html

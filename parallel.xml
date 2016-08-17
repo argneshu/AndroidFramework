@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Consumer_Sanity_Suite" parallel="tests" thread-count="2" verbose="1" >
+    
+<test name="CartScenarios">
+    <parameter name="browserName" value="Chrome"/>
+     <parameter name="platform" value="Android"/>
+     <parameter name="deviceName" value="SM-N750"/>
+      <parameter name="version" value="5.1.1"/>
+      <parameter name="sleep" value="1500"/>
+		<classes>
+			<class name="Functional_Scenarios.CartScenarios" />
+		</classes>
+	</test>
+	
+<test name="CartScenarios1">
+    <parameter name="browserName" value="Chrome"/>
+     <parameter name="platform" value="Android"/>
+     <parameter name="deviceName" value="SM-G7012"/>
+       <parameter name="version" value="4.4.2"/>
+       <parameter name="sleep" value="15000999"/>
+		<classes>
+			<class name="Functional_Scenarios.QuickTourScenarios" />
+		</classes>
+	</test>
+</suite>

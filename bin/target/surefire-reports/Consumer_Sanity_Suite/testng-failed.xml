@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Consumer_Sanity_Suite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="Utility.TestListener"/>
+    <listener class-name="Utility.RetryListener"/>
+  </listeners>
+  <test name="CartScenarios">
+    <classes>
+      <class name="Functional_Scenarios.CartScenarios"/>
+    </classes>
+  </test> <!-- CartScenarios -->
+  <test name="ProductDetailsScenarios">
+    <classes>
+      <class name="Functional_Scenarios.ProductDetailsScenarios"/>
+    </classes>
+  </test> <!-- ProductDetailsScenarios -->
+  <test name="DownloadFromPlayStore">
+    <classes>
+      <class name="Functional_Scenarios.DownloadFromPlayStore"/>
+    </classes>
+  </test> <!-- DownloadFromPlayStore -->
+  <test name="CartScenarios(failed)">
+    <classes>
+      <class name="Functional_Scenarios.ProductDetailsScenarios">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initializeDrivers"/>
+          <include name="quitTest"/>
+        </methods>
+      </class> <!-- Functional_Scenarios.ProductDetailsScenarios -->
+      <class name="Functional_Scenarios.DownloadFromPlayStore">
+        <methods>
+          <include name="afterExecution"/>
+          <include name="quitTest"/>
+        </methods>
+      </class> <!-- Functional_Scenarios.DownloadFromPlayStore -->
+      <class name="Functional_Scenarios.CartScenarios">
+        <methods>
+          <include name="executeTestCase"/>
+          <include name="tearDown"/>
+          <include name="initializeDrivers"/>
+          <include name="quitTest"/>
+        </methods>
+      </class> <!-- Functional_Scenarios.CartScenarios -->
+    </classes>
+  </test> <!-- CartScenarios(failed) -->
+  <test name="ProductDetailsScenarios(failed)">
+    <classes>
+      <class name="Functional_Scenarios.ProductDetailsScenarios">
+        <methods>
+          <include name="productWithFilter"/>
+          <include name="scrollableProductList"/>
+          <include name="favouritesProducts"/>
+          <include name="loginCheckForSubmitReview"/>
+          <include name="tearDown"/>
+          <include name="initializeDrivers"/>
+          <include name="moreCategoryProductListing"/>
+          <include name="quitTest"/>
+          <include name="exchangeFunctionality"/>
+          <include name="sorting"/>
+          <include name="executeTestCase"/>
+        </methods>
+      </class> <!-- Functional_Scenarios.ProductDetailsScenarios -->
+      <class name="Functional_Scenarios.DownloadFromPlayStore">
+        <methods>
+          <include name="afterExecution"/>
+          <include name="quitTest"/>
+        </methods>
+      </class> <!-- Functional_Scenarios.DownloadFromPlayStore -->
+      <class name="Functional_Scenarios.CartScenarios">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initializeDrivers"/>
+          <include name="quitTest"/>
+        </methods>
+      </class> <!-- Functional_Scenarios.CartScenarios -->
+    </classes>
+  </test> <!-- ProductDetailsScenarios(failed) -->
+</suite> <!-- Failed suite [Consumer_Sanity_Suite] -->
